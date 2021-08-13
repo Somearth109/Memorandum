@@ -1,7 +1,6 @@
-.Board {
-  height: 92%;
-  display: flex;
-  overflow-x: auto;
+.Board {  
+  overflow-x: hidden;
+  padding: 50px;
 }
 
 .Add-List {

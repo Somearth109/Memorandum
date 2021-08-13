@@ -6,7 +6,7 @@ export default function seed(store) {
 
   store.dispatch({
     type: "ADD_LIST",
-    payload: { listId: firstListId, listTitle: "First list" }
+    payload: { listId: firstListId, listTitle: "Title" }
   });
 
   store.dispatch({
@@ -14,7 +14,7 @@ export default function seed(store) {
     payload: {
       listId: firstListId,
       cardId: shortid.generate(),
-      cardText: "First card"
+      cardText: "Card 1"
     }
   });
 
@@ -23,7 +23,7 @@ export default function seed(store) {
     payload: {
       listId: firstListId,
       cardId: shortid.generate(),
-      cardText: "Second card"
+      cardText: "Card 2"
     }
   });
 
@@ -32,7 +32,7 @@ export default function seed(store) {
 
   store.dispatch({
     type: "ADD_LIST",
-    payload: { listId: secondListId, listTitle: "Second list" }
+    payload: { listId: secondListId, listTitle: "Title" }
   });
 
   store.dispatch({

@@ -61,9 +61,9 @@ class Board extends Component {
       <DragDropContext onDragEnd={this.handleDragEnd}>
         <Droppable droppableId="board" direction="horizontal" type="COLUMN">
           {(provided, _snapshot) => (
-            <div className="Board" ref={provided.innerRef}>
+            <div className="Board row" ref={provided.innerRef}>
               {board.lists.map((listId, index) => {
-                return <List listId={listId} key={listId} index={index} />;
+                return <List listId={listId} className="col-lg-4" key={listId} index={index} />;
               })}
 
               {provided.placeholder}

@@ -12,6 +12,7 @@ import shortid from "shortid";
 
 class List extends Component {
   state = {
+    randomColor:["#F8485E","#E41749","#FF8A5C","#FAFF00","#78BBE6","#04DEAD","#66DE93","#FFFBDF","#FDBAF8","#D8F8B7"],
     editingTitle: false,
     title: this.props.list.title,
     addingCard: false
@@ -73,6 +74,7 @@ class List extends Component {
             {...provided.draggableProps}
             {...provided.dragHandleProps}
             className="List"
+            style={{background:this.state.randomColor[Math.floor(Math.random()*this.state.randomColor.length)]}}
           >
             {editingTitle ? (
               <ListEditor
